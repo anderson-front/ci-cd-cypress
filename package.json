@@ -4,7 +4,7 @@
   "description": "Sample project to demonstrate the usage of Cypress.env, cypress.env.json, and CYPRESS_ variables.",
   "main": "cypress.config.js.js",
   "scripts": {
-    "cy:open": "CYPRESS_SECRET_ENV_VARIABLE='0R4NG3' cypress open",
+    "cy:open": "cypress open",
     "test": "CYPRESS_SECRET_ENV_VARIABLE='0R4NG3' cypress run"
   },
   "keywords": [
