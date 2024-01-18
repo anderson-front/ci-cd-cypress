@@ -1,6 +1,6 @@
 
 Cypress.Commands.add('endereco', () => {
-    const apiUrl = Cypress.env('MY_API_URL');
+    const apiUrl = Cypress.env('CYPRESS_API_URL');
     cy.request({
         method: "GET",
         url: apiUrl,
