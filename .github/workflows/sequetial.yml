@@ -10,11 +10,15 @@ jobs:
     runs-on: ubuntu-20.04
 
     steps:
-      - name: Teste
+      - name: Cypress run
+
+
         run:
           echo $CYPRESS_API_URL
     env:
         CYPRESS_API_URL: ${{ secrets.CYPRESS_API_URL }} 
+
+        
 
 
 
