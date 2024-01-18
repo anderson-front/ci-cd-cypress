@@ -16,6 +16,13 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
+      - name: Debug Environment Before
+        run: env
+      - name: Set MY_API_URL environment variable
+        run: echo "MY_API_URL=${MY_API_URL}" >> $GITHUB_ENV
+      - name: Debug Environment After
+        run: env
+
       - name: Set MY_API_URL environment variable
         run: echo "MY_API_URL=${MY_API_URL}" >> $GITHUB_ENV
       - name: Debug MY_API_URL
@@ -23,10 +30,5 @@ jobs:
 
       - name: Cypress run
         uses: cypress-io/github-action@v4
-        
-      - name: Debug Environment Before
-        run: env
-      - name: Set MY_API_URL environment variable
-        run: echo "MY_API_URL=${MY_API_URL}" >> $GITHUB_ENV
-      - name: Debug Environment After
-        run: env
+
+
