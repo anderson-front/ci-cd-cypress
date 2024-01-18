@@ -18,6 +18,8 @@ jobs:
 
       - name: Set MY_API_URL environment variable
         run: echo "MY_API_URL=${MY_API_URL}" >> $GITHUB_ENV
+      - name: Debug MY_API_URL
+        run: echo "MY_API_URL=${MY_API_URL}"
 
       - name: Cypress run
         uses: cypress-io/github-action@v4
