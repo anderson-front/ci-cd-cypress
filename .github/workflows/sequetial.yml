@@ -15,8 +15,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-        with:
-          env: true
       - name: Set CYPRESS_API_URL environment variable
         run: echo "CYPRESS_API_URL=${CYPRESS_API_URL}" >> $GITHUB_ENV
       - name: Cypress run
