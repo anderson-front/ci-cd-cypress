@@ -12,7 +12,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Run Cypress tests locally
+      - name: Primeiro teste de ci/cd com cypress
         uses: cypress-io/github-action@v6
 
         env:
