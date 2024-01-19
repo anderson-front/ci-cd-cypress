@@ -2,7 +2,7 @@
   "name": "cypress-envs",
   "version": "1.0.0",
   "description": "Sample project to demonstrate the usage of Cypress.env, cypress.env.json, and CYPRESS_ variables.",
-  "main": "cypress.config.js.js",
+  "main": "cypress.config.js",
   "scripts": {
     "cy:open": "cypress open",
     "test": "cypress run"

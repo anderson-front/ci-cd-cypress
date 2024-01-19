@@ -18,6 +18,6 @@ jobs:
         env:
           CYPRESS_API_URL: ${{ secrets.CYPRESS_API_URL }}
         with:
-          command: npm run test
+          command: npm test
 
 
