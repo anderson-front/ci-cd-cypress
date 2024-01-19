@@ -5,7 +5,7 @@
   "main": "cypress.config.js.js",
   "scripts": {
     "cy:open": "cypress open",
-    "test": "CYPRESS_SECRET_ENV_VARIABLE='0R4NG3' cypress run"
+    "test": "cypress run"
   },
   "keywords": [
     "cypress.io",
